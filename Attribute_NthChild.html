@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and Nth child</title>
+    <style>
+        .container{
+            width: 400px;
+            display: block;
+            margin: auto;
+        }
+       input{
+        display: block;
+       }
+       input[type="text"]{
+        border: 2px solid black;
+        margin: 5px;
+       }
+       input[type="passward"]{
+        border: 2px solid red;
+        margin: 5px;
+       }
+       input[type="email"]{
+        border: 2px solid violet;
+        margin: 5px;
+       }
+       input[type="button"]{
+        border: 2px solid blue;
+        margin: 5px;
+       }
+       a[target="_blank"]
+       {
+          color: pink;
+       }
+       a[target="_self"]
+       {
+          color: blue;
+       }
+       /* li:nth-child(3)
+       {
+        color: aqua;
+       } */
+       li:nth-child(odd)
+       {
+        color: rgb(246, 255, 0);
+       }
+       li:nth-child(even)
+       {
+        color: rgb(255, 0, 204);
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <a href="http://google.com" target="_blank">google</a><br>
+        <a href="http://google.com" target="_self">facebook</a>
+        <form action="" class="from-content">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="email" placeholder="Enter your email">
+            <input type="button" value="Submit">
+    
+        </form>
+        <ul>
+            <li id="liine-1">my name is pathan</li>
+            <li id="liine-2">my name is pathan</li>
+            <li id="liine-3">my name is pathan</li>
+            <li id="liine-4">my name is pathan</li>
+            <li id="liine-5">my name is pathan</li>
+            <li id="liine-6">my name is pathan</li>
+        </ul>
+    </div>
+</body>
+</html>
